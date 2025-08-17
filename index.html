@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Primeiro site com CSS</h1>
+        <p>Desenvolvedor Web Iniciante</p>
+    </header>
+
+    <main>
+    <h2>Sobre Mim</h2>
+    <img src="image (7).png" alt="Minha foto de perfil">
+    <p>Olá! Sou uma entusiasta de tecnologia aprendendo a criar sites incríveis com HTML e CSS. Este é o meu primeiro projeto!</p>
+
+    <h2>Meus Projetos</h2>
+    <a href="projeto1.html">Projeto 1</a>
+    
+    <button id="btn-descricao" onclick="mostrarDescricao()">Ver Descrição</button>
+    
+    <p id="descricao-projeto" style="display: none;">Esta é a descrição detalhada do meu projeto sobre Controle de Equipamentos. O objetivo é criar um sistema eficiente para monitorar o uso e a manutenção dos aparelhos.</p>
+    
+    <br>
+    <a href="#">Projeto 2</a>
+    </main>
+    
+    <footer>
+        <p>Contato: email@exemplo.com</p>
+    </footer>
+    <script>
+    function mostrarDescricao() {
+        const paragrafo = document.getElementById("descricao-projeto");
+        // NOVO: Encontrar o botão pelo seu novo id
+        const botao = document.getElementById("btn-descricao");
+
+        if (paragrafo.style.display === "none") {
+            paragrafo.style.display = "block";
+            // NOVO: Mudar o texto do botão
+            botao.innerHTML = "Ocultar Descrição";
+        } else {
+            paragrafo.style.display = "none";
+            // NOVO: Mudar o texto do botão de volta
+            botao.innerHTML = "Ver Descrição";
+        }
+    }
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
