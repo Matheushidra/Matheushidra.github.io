@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Acesso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Área Restrita</h1>
+    </header>
+
+    <main>
+        <h2>Por favor, faça o login para continuar</h2>
+        
+        {% if error %}
+            <p style="color:red;"><strong>Erro:</strong> {{ error }}</p>
+        {% endif %}
+
+        <form action="" method="post">
+        
+        
+        <form action="" method="post">
+            <div>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <br>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Acesso restrito.</p>
+    </footer>
+
+</body>
+</html>
